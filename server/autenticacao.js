@@ -1,5 +1,5 @@
 
-import users from '../server/users.js'
+import {users} from '../server/users.js'
 
 
 const dados = {
