@@ -13,8 +13,8 @@ const requisicao1 = {
 }
 
 const datacadastro = {
-    username: 'Cassio',
-    email: "cassionst@gmail.com",
+    username: 'Nicolle',
+    email: "nwieira59@gmail.com",
     password: '12345678'
 }
 
