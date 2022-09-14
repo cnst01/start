@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header{
+    font-size: large;
+    display: block;
+    border-radius: 5px;
+    border: 5px solid rgb(253, 79, 253);
+    background-color:aliceblue;
+    text-align: center;
+    margin: 2px;
+  }
+  .inputs{
+    display: inline-block;
+    margin: 2px;
+  }
+  input {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid rgb(253, 79, 253);
+    background-color:aliceblue;
+    text-align: center;
+  }
+
+  .buttons {
+    display: inline-block;
+  }
+
+  button {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid rgb(253, 79, 253);
+    background-color:aliceblue;
+    text-align: center;
+  }
+
+  .message {
+    border-radius: 5px;
+    border: 5px solid rgb(253, 79, 253);
+    background-color:aliceblue;
+    text-align: center;
+    margin: 2px;
+    width: 33%;
+    font-size: larger;
+  }
+  
