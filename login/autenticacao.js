@@ -65,6 +65,7 @@ function autenticarlogin(obj,users){
         
     } 
 }
-console.log('estoy aqui')
+
+console.log(request)
 
 direcionarReq(request)
