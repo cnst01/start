@@ -1,7 +1,5 @@
 import {users} from '../server/users.js'
 import {direcionarReq} from '../server/autenticacao.js'
-import {autenticarlogin} from '../server/autenticacao.js'
-import {fazerCadastro} from '../server/autenticacao.js'
 
 const voltar = document.getElementById("voltar");
 voltar.addEventListener("click", function(){
