@@ -51,7 +51,7 @@ function autenticarlogin(obj,users){
     const userMap = users.map(function(el){return el.username})
     const passwordMap = users.map((function(el){return el.password}))
     if(userMap.includes(obj.username)){
-        const local = userMap.indexOf('Cassio')
+        const local = userMap.indexOf(obj.username)
         if(obj.password === passwordMap[local]){
             console.log('autenticacao concluida com sucesso!')
             const login = "Succed"
