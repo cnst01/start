@@ -66,6 +66,6 @@ function autenticarlogin(obj,users){
     } 
 }
 
-console.log(request)
+console.log(request[0])
 
-direcionarReq(request)
+direcionarReq(request[0])
