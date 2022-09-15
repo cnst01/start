@@ -22,7 +22,6 @@ const requisicao2 = {
 }
 
 export function direcionarReq(requisicao,users){
-    console.log("to aqui")
     if(requisicao.type === 'login'){
         return (autenticarlogin(requisicao.data,users))
     } else if(requisicao.type === 'cadastro'){
@@ -47,7 +46,6 @@ function fazerCadastro(obj,users){
 }
 
 function autenticarlogin(obj,users){
-    console.log("to aqui l")
     const userMap = users.map(function(el){return el.username})
     const passwordMap = users.map((function(el){return el.password}))
     if(userMap.includes(obj.username)){
@@ -64,4 +62,9 @@ function autenticarlogin(obj,users){
         }
         
     } 
+    else {
+        console.log('Usuário não existe!')
+        const login = "Failed"
+        return(login)
+    }
 }
