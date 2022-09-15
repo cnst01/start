@@ -1,5 +1,6 @@
 
 import {users} from '../server/users.js'
+import {request} from '../login/log.js'
 
 
 const dados = {
@@ -65,7 +66,4 @@ function autenticarlogin(obj,users){
     } 
 }
 
-
-console.log(direcionarReq(requisicao2))
-console.log(direcionarReq(requisicao1))
-console.log(users)
+direcionarReq(request)

@@ -3,9 +3,20 @@ voltar.addEventListener("click", function(){
     window.location.replace('../index.html')
 });
 
+var name = null
+var pass = null
+
 const enviar = document.getElementById('login')
 enviar.addEventListener('click', function(){
-    const username = document.getElementById('username').value
-    const password = document.getElementById('password').value
-    console.log('Trying login with: ' + username + ' , ' + password)
+    name = document.getElementById('username').value
+    pass = document.getElementById('password').value
+    console.log('Trying login with: ' + name + ' , ' + pass)
 })
+
+export const request = {
+    username: name,
+    password: pass
+}
+
+
+
