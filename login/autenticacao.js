@@ -1,6 +1,6 @@
 
 import {users} from '../server/users.js'
-import {request} from '../login/log.js'
+import {request} from './log.js'
 
 
 const dados = {
