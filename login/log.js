@@ -1,5 +1,5 @@
-import {users} from '../server/users.js'
-import direcionarReq from '../server/autenticacao'
+
+import * as aut from '../server/autenticacao.js'
 
 const voltar = document.getElementById("voltar");
 voltar.addEventListener("click", function(){
@@ -16,7 +16,7 @@ enviar.addEventListener('click', function(){
     const dados = {username: name, password: pass}
     const request = {type:'login',data:dados}
     console.log('Trying login with: ' + name + ' , ' + pass)
-    direcionarReq(request)
+    aut.direcionarReq(request)
 })
 
 

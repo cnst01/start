@@ -1,4 +1,4 @@
-
+import {users} from '../server/users.js'
 const dados = {
     username: 'Cassio',
     password: '12345678'
