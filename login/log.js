@@ -1,4 +1,3 @@
-import {users} from '../server/users.js'
 import {direcionarReq} from '../server/autenticacao.js'
 
 const voltar = document.getElementById("voltar");
