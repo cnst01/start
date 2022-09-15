@@ -1,4 +1,4 @@
-import {users} from '../server/users.js'
+
 
 const dados = {
     username: 'Cassio',
@@ -21,7 +21,7 @@ const requisicao2 = {
     data: datacadastro
 }
 
-export function direcionarReq(requisicao){
+export function direcionarReq(requisicao,users){
     console.log("to aqui")
     if(requisicao.type === 'login'){
         return (autenticarlogin(requisicao.data,users))
