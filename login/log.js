@@ -5,7 +5,7 @@ voltar.addEventListener("click", function(){
 
 const enviar = document.getElementById('login')
 enviar.addEventListener('click', function(){
-    const username = document.getElementById('username')
-    const password = document.getElementById('password')
+    const username = document.getElementById('username').value
+    const password = document.getElementById('password').value
     console.log('Trying login with: ' + username + ' , ' + password)
 })
