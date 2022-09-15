@@ -22,6 +22,7 @@ const requisicao2 = {
 }
 
 export function direcionarReq(requisicao){
+    console.log("to aqui")
     if(requisicao.type === 'login'){
         return (autenticarlogin(requisicao.data,users))
     } else if(requisicao.type === 'cadastro'){
@@ -30,6 +31,7 @@ export function direcionarReq(requisicao){
 }
 
 function fazerCadastro(obj,users){
+    console.log("to aqui c")
     const userMap = users.map(function(el){return el.username})
     const emailMap = users.map(function(el){return el.email})
     if(userMap.includes(obj.username)){
@@ -45,6 +47,7 @@ function fazerCadastro(obj,users){
 }
 
 function autenticarlogin(obj,users){
+    console.log("to aqui l")
     const userMap = users.map(function(el){return el.username})
     const passwordMap = users.map((function(el){return el.password}))
     if(userMap.includes(obj.username)){
