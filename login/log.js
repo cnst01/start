@@ -16,7 +16,7 @@ enviar.addEventListener('click', function(){
     const dados = {username: name, password: pass}
     const request = {type:'login',data:dados}
     console.log('Trying login with: ' + name + ' , ' + pass)
-    console.log(direcionarReq(request,users))
+    alert(direcionarReq(request,users))
 })
 
 
