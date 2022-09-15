@@ -1,4 +1,4 @@
-import {users} from '../server/users.js'
+
 const dados = {
     username: 'Cassio',
     password: '12345678'
@@ -20,7 +20,7 @@ const requisicao2 = {
     data: datacadastro
 }
 
-function direcionarReq(requisicao){
+export function direcionarReq(requisicao){
     if(requisicao.type === 'login'){
         return (autenticarlogin(requisicao.data,users))
     } else if(requisicao.type === 'cadastro'){
@@ -28,7 +28,7 @@ function direcionarReq(requisicao){
     } 
 }
 
-function fazerCadastro(obj,users){
+export function fazerCadastro(obj,users){
     const userMap = users.map(function(el){return el.username})
     const emailMap = users.map(function(el){return el.email})
     if(userMap.includes(obj.username)){
@@ -43,7 +43,7 @@ function fazerCadastro(obj,users){
     }
 }
 
-function autenticarlogin(obj,users){
+export function autenticarlogin(obj,users){
     const userMap = users.map(function(el){return el.username})
     const passwordMap = users.map((function(el){return el.password}))
     if(userMap.includes(obj.username)){
