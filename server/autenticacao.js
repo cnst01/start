@@ -29,7 +29,7 @@ export function direcionarReq(requisicao){
     } 
 }
 
-export function fazerCadastro(obj,users){
+function fazerCadastro(obj,users){
     const userMap = users.map(function(el){return el.username})
     const emailMap = users.map(function(el){return el.email})
     if(userMap.includes(obj.username)){
@@ -44,7 +44,7 @@ export function fazerCadastro(obj,users){
     }
 }
 
-export function autenticarlogin(obj,users){
+function autenticarlogin(obj,users){
     const userMap = users.map(function(el){return el.username})
     const passwordMap = users.map((function(el){return el.password}))
     if(userMap.includes(obj.username)){
