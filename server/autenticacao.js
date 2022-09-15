@@ -20,7 +20,7 @@ const requisicao2 = {
     data: datacadastro
 }
 
-export default function direcionarReq(requisicao){
+function direcionarReq(requisicao){
     if(requisicao.type === 'login'){
         return (autenticarlogin(requisicao.data,users))
     } else if(requisicao.type === 'cadastro'){
@@ -28,7 +28,7 @@ export default function direcionarReq(requisicao){
     } 
 }
 
-export default function fazerCadastro(obj,users){
+function fazerCadastro(obj,users){
     const userMap = users.map(function(el){return el.username})
     const emailMap = users.map(function(el){return el.email})
     if(userMap.includes(obj.username)){
@@ -43,7 +43,7 @@ export default function fazerCadastro(obj,users){
     }
 }
 
-export default function autenticarlogin(obj,users){
+function autenticarlogin(obj,users){
     const userMap = users.map(function(el){return el.username})
     const passwordMap = users.map((function(el){return el.password}))
     if(userMap.includes(obj.username)){
