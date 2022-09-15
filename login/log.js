@@ -13,12 +13,12 @@ enviar.addEventListener('click', function(){
     console.log('Trying login with: ' + name + ' , ' + pass)
 })
 
-console.log(request)
 
-export const request = {
+
+export const request = [{
     username: name,
     password: pass
-}
+}]
 
 
 
