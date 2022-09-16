@@ -57,14 +57,14 @@ function autenticarlogin(obj,users){
         }
         else {
             console.log('Falha na autenticacao!')
-            const login = "Failed"
+            const login = "Failed - Incorrect password"
             return(login)
         }
         
     } 
     else {
         console.log('Usuário não existe!')
-        const login = "Failed"
+        const login = "Failed - User not exist" 
         return(login)
     }
 }
