@@ -6,13 +6,10 @@ voltar.addEventListener("click", function(){
     window.location.replace('../index.html')
 });
 
-var name = null
-var pass = null
-
 const enviar = document.getElementById('login')
 enviar.addEventListener('click', function(){
-    name = document.getElementById('username').value
-    pass = document.getElementById('password').value
+    const name = document.getElementById('username').value
+    const pass = document.getElementById('password').value
     const dados = {username: name, password: pass}
     const request = {type:'login',data:dados}
     console.log('Trying login with: ' + name + ' , ' + pass)
